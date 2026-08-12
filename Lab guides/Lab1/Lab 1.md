@@ -57,256 +57,118 @@ you a complete operational picture rather than an isolated setup task.
 - At least one security or distribution group in the tenant for policy
   scoping.
 
-[TABLE]
-
-# Part A — Create a pay-as-you-go billing policy
-
-# Exercise 1 — Create a billing policy and add billing details
-
-# 
+# Task 1 — Create a billing policy and add billing details
 
 1.  Sign in to the **Microsoft 365 admin centre**
-    [admin.microosft.com](%3ca%20href=%22https:/login.microsoftonline.com/common/oauth2/authorize?client_id=00000006-0000-0ff1-ce00-000000000000&amp;response_type=code%20id_token&amp;scope=openid%20profile&amp;state=OpenIdConnect.AuthenticationProperties%3Dt6jMHseTkWXAad9AB7ThzZlS8WzT6LARlRE5VxRDYrtvO1MOLYRMJbbRyZuZDUz8F9NMKbz_lQZ_SCfNSpR9c7mxxoRN4WBCM9J5PRVNN1_7_bXrwh4oIDy9ICK8NRDbol14toaeC41zQEWIRZDC2DHOv-dbgACTJNYB2V_jsZmke4cTCsgqN_Y1YDWlXCHD2U--bp__RFqVNuRl4BsmOg&amp;response_mode=form_post&amp;nonce=639209129157633155.NDI4MjZjNGEtYzg3My00OWY4LWIyNWYtMmU0NDQ3YzUzNWU1MjQ2MzNmZTQtNDJhMi00NGFlLTk3MzQtYTBiZjE4MTM2Nzgx&amp;redirect_uri=https%3A%2F%2Fadmin.microsoft.com%2Flanding&amp;ui_locales=en-US&amp;mkt=en-US&amp;client-request-id=0ab614a7-a1b3-4682-9df2-d9494d40a0b6&amp;claims=%7B%22id_token%22%3A%7B%22xms_cc%22%3A%7B%22values%22%3A%5B%22CP1%22%5D%7D%7D%7D&amp;x-client-SKU=ID_NET472&amp;x-client-ver=8.19.2.0%22%3eSign%20in%20to%20your%20account%3c/a%3e),
-    enter the **Username and Password** ![A screenshot of a computer
-    AI-generated content may be incorrect.](./media/image1.png)
+    [admin.microsoft.com](%3ca%20href=%22https:/login.microsoftonline.com/common/oauth2/authorize?client_id=00000006-0000-0ff1-ce00-000000000000&amp;response_type=code%20id_token&amp;scope=openid%20profile&amp;state=OpenIdConnect.AuthenticationProperties%3Dt6jMHseTkWXAad9AB7ThzZlS8WzT6LARlRE5VxRDYrtvO1MOLYRMJbbRyZuZDUz8F9NMKbz_lQZ_SCfNSpR9c7mxxoRN4WBCM9J5PRVNN1_7_bXrwh4oIDy9ICK8NRDbol14toaeC41zQEWIRZDC2DHOv-dbgACTJNYB2V_jsZmke4cTCsgqN_Y1YDWlXCHD2U--bp__RFqVNuRl4BsmOg&amp;response_mode=form_post&amp;nonce=639209129157633155.NDI4MjZjNGEtYzg3My00OWY4LWIyNWYtMmU0NDQ3YzUzNWU1MjQ2MzNmZTQtNDJhMi00NGFlLTk3MzQtYTBiZjE4MTM2Nzgx&amp;redirect_uri=https%3A%2F%2Fadmin.microsoft.com%2Flanding&amp;ui_locales=en-US&amp;mkt=en-US&amp;client-request-id=0ab614a7-a1b3-4682-9df2-d9494d40a0b6&amp;claims=%7B%22id_token%22%3A%7B%22xms_cc%22%3A%7B%22values%22%3A%5B%22CP1%22%5D%7D%7D%7D&amp;x-client-SKU=ID_NET472&amp;x-client-ver=8.19.2.0%22%3eSign%20in%20to%20your%20account%3c/a%3e)
 
-> ![](./media/image2.png)
 
-- Click **Yes** to stay signed-in
+    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
-> ![](./media/image3.png)
+        ![](./media/b1.png)
 
-- Approve the **MAF** if asked
+	- **Password:** <inject key="AzureAdUserPassword"></inject>
 
-> ![A screenshot of a sign in AI-generated content may be
-> incorrect.](./media/image4.png)
+        ![](./media/b2.png)
 
-2.  In **M365 admin centre** home page, go to **Copilot** from left pane
-    \> **Billing & usage.**
+2. On the **Stay signed in?** prompt, click **No**
+        ![](./media/b3.png)
 
-> ![](./media/image5.png)
+3.  In **M365 admin centre** home page, go to **Copilot (1)** from left pane
+    \> **Cost management (2)**
 
-3.  On the **Billing policies** tab, select **Add a billing policy.**
+     ![](./media/b4.png)
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image6.png)
+4.  On the **Cost management** tab, select **classic Billing & usage**
 
-4.  On the Billing details page, enter a name for the billing policy.
+    ![A screenshot of a computer AI-generated content may be
+ incorrect.](./media/b5.png)
 
-- **Billing policy name:** Copilot Chat PAYG - Pilot Group
+5.  On the **Billing & usage** page, select the **Billing policies (1)** tab, then click **+ Add a billing policy (2)** to create a new billing policy.
 
-> ![A screenshot of a computer screen AI-generated content may be
-> incorrect.](./media/image7.png)
->
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image8.png)
+    ![](./media/b6.png)
 
-- **Select the resource group**: ODL-Copilot-2335709
+6. On the **Billing details** page, enter **Copilot Chat PAYG - Pilot Group (1)** in the **Name** field, select the appropriate **Subscription (2)**, choose **ODL-Copilot-<inject key="AzureAdUserEmail"></inject> (3)** as the **Resource group**, select **East US (4)** as the **Region**, accept the pay-as-you-go billing terms of service **(5)**, and then click **Next (6)**.
 
-5.  From the **Subscription** drop-down list, select an existing **Azure
-    subscription,** or select Create a new subscription.
+    ![](./media/b7.png)
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image9.png)
+7. On the **Choose users** page, select **All users (1)** and then click **Next (2)** to continue.
 
-6.  From the Resource group drop-down list, select an existing resource
-    group, or select Create a new resource group.
+    ![](./media/b8.png)
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image10.png)
+8. On the **Budget** page, select **Set a budget for this policy (1)**, enter **200 (2)** as the budget amount, keep **On the first day of the month (3)** selected as the reset schedule, and then click **Next (4)**.
 
-7.  From the **Region** drop-down list, select a region **(East-US)**.
-    This selection determines where the tenant ID and usage data are
-    stored.
+    ![](./media/b9.png)
 
-> ![](./media/image11.png)
+9. On the **Review and create policy** page, review the billing policy details and click **Create policy (1)** to create the policy.
 
-8.  Read the Pay-as-you-go billing terms of service and privacy
-    statement, then select the I accept the Pay-as-you-go billing terms
-    of service checkbox.
+    ![](./media/b10.png)
 
-> ![](./media/image12.png)
+10. On the **New billing policy created** page, verify that the billing policy was created successfully and click **Done** to finish the setup process.
 
-9.  Select Next.
+    ![](./media/b11.png)
 
-# Exercise 2 — Add users or groups to the billing policy
+# Task 2 — Connect a Pay-as-you-go service and monitor spending
 
-[TABLE]
+1. On the **Billing & usage** page, select the **Pay-as-you-go services (1)** tab and then select **Microsoft 365 Copilot Chat (2)**.
 
-10. On the Choose users page, select All users or a Specific group. If
-    you select Specific group, search for and add a single group.
+    ![](./media/b12.png)
 
-> Click on **Add a group** select the **OTU WA MSB-106259** from the
-> dropdown
->
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image13.png)
->
-> Note: When you select a group, only the first 1,000 groups are
-> displayed, in alphabetical order.
+2. On the **Manage billing for Microsoft 365 Copilot Chat** page, enable the connection for the **Copilot Chat PAYG - Pilot Group** billing policy by turning on the **Connected (1)** toggle, and then click **Save (2)**.
 
-11. Select **Next**.
+    ![](./media/b13.png)
 
-# Exercise 3 — Set a budget for the billing policy 
+3. Verify that the **Billing policy connection(s) updated** message is displayed, confirming that the billing policy has been successfully connected to Microsoft 365 Copilot Chat.
 
-[TABLE]
+    ![](./media/b14.png)
 
-12. On the Budget page, if you want to set a budget, select the Set a
-    budget for this policy checkbox.
+4. In the Microsoft 365 admin center, expand **Copilot (1)**, select **Cost management (2)**, and then click **classic Billing & usage (3)** to open the billing policy management page.
 
-> Set budget- $ 200
+    ![](./media/b15.png)
 
-13. Enter a value for the budget limit.
+5. On the **Billing & usage** page, select the **Billing policies (1)** tab and then choose the **Copilot Chat PAYG - Pilot Group (2)** billing policy.
 
-**Select when to reset the budget spending:**
+    ![](./media/b16.png)
 
-- On the first day of the month.
+6. Review the billing policy details and verify that the policy information, subscription, resource group, and region are configured correctly.
 
-- On the first day of the quarter.
+    ![](./media/b17.png)
 
-- On the first day of the year.
+7. Select the **Budget (1)** tab to review the billing policy spending details and verify that the monthly spending chart **(2)** is displayed.
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image14.png)
+    ![](./media/b18.png)
 
-14. When you finish configuring the budget, select Next.
+8. Select the **Users (1)** tab and verify that the billing policy is assigned to **All users (2)**.
 
-# Exercise 4 — Review, create, and connect during setup
+    ![](./media/b19.png)
 
-15. On the Review and create policy page, verify all the details you
-    entered. Make any needed changes, then select Create policy.
+9. Click **Close** from the top right corner to exit the pop-up.
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image15.png)
->
-> ![](./media/image16.png)
+# Task 3 — Disconnect a pay-as-you-go service and delete the policy
 
-16. On the New billing policy created page, select Connect your services
-    to connect the policy to a pay-as-you-go service now, or select Done
-    to connect it later (Part B).
+1. In the Microsoft 365 admin center, expand **Copilot (1)**, select **Cost management (2)**, and then click **classic Billing & usage (3)** to open the billing policy management page.
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image17.png)
+    ![](./media/b15.png)
 
-17. If you selected Connect your services, you're redirected to the
-    Pay-as-you-go services tab. Select the name of the service to
-    connect.
+2. On the **Billing & usage** page, select the **Pay-as-you-go services (1)** tab and then select **Microsoft 365 Copilot Chat (2)**.
 
-> Service selected: Microsoft 365 Copilot Chat
->
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image18.png)
->
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image19.png)
+    ![](./media/b20.png)
 
-18. In the Manage billing policy connections panel, find the policy to
-    connect to, then set the Connection status toggle to Connected.
+3. On the **Manage billing for Microsoft 365 Copilot Chat** page, turn off the **Connected (1)** toggle for the **Copilot Chat PAYG - Pilot Group** billing policy and then click **Save (2)**.
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image20.png)
->
-> ![A screenshot of a chat AI-generated content may be
-> incorrect.](./media/image21.png)
->
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image22.png)
+    ![](./media/b21.png)
 
-19. To apply Microsoft Copilot Studio credits to Microsoft 365 Copilot
-    Chat, select the Apply available credits to Microsoft 365 Copilot
-    Chat checkbox. When credits run out, billing switches to the
-    pay-as-you-go policy to keep the service active.
+4. Verify that the **Billing policy connection(s) updated** message is displayed, confirming that the billing policy has been successfully disconnected from Microsoft 365 Copilot Chat.
 
-[TABLE]
+    ![](./media/b22.png)
 
-20. Select Save, then close the side panel.
+5. On the **Copilot Chat PAYG - Pilot Group** billing policy page, click **Delete billing policy** to remove the billing policy.
 
-> ![A screenshot of a chat AI-generated content may be
-> incorrect.](./media/image23.png)
+    ![](./media/b23.png)
 
-# Exercise 5 — View spending for your organization
+6. In the confirmation dialog, click **Delete** to permanently delete the billing policy.
 
-21. In the Microsoft 365 admin center, go to Copilot \> Billing & usage.
-
-> ![](./media/image24.png)
-
-22. On the Billing policies tab, select **Copilot Chat PAYG- Pilot
-    Group** billing policy.
-
-> ![](./media/image25.png)
->
-> ![](./media/image26.png)
-
-23. In the top bar select the Budget tab. The Spending option displays
-    data for the current month and includes a chart covering the last
-    six months.
-
-> ![](./media/image27.png)
->
-> ![](./media/image28.png)
-
-24. Click on **Users** tab to view the users associated with billing
-    policy, Click **Edit** to change the users group
-
-> ![](./media/image29.png)
-
-25. Click Close from top right corner to exit the pop-up
-
-> ![](./media/image30.png)
-
-You can also monitor pay-as-you-go usage and costs in Microsoft Cost
-Management for Azure. Ensure you have at least read access to the
-billing resource group.
-
-# Exercise 6 — Disconnect a pay-as-you-go service
-
-26. In the Microsoft 365 admin center, go to Copilot \> Billing & usage.
-
-> ![](./media/image31.png)
-
-27. On the Billing & usage page, select the Pay-as-you-go services tab.
-
-> ![](./media/image32.png)
-
-28. Select the service you want to disconnect.
-
-> ![](./media/image33.png)
-
-29. In the Manage billing policy connections panel, set the Connected
-    toggle to off.
-
-> ![](./media/image34.png)
->
-> ![](./media/image35.png)
-
-30. Select Save, then close the side panel.
-
-> ![](./media/image36.png)
-
-***Important:** If multiple services connect to a single policy, repeat
-these steps for each service.*
-
-[TABLE]
-
-# Exercise 7 — Delete the billing policy
-
-*After you disconnect a **pay-as-you-go service**, you can delete the
-billing policy.*
-
-31. In the **Microsoft 365 admin center**, go to **Copilot** \>
-    **Billing & usage.**
-
-> ![](./media/image37.png)
-
-32. On the **Billing policies** tab, select a billing policy, then
-    select **Delete billing policy**.
-
-> ![](./media/image38.png)![](./media/image39.png)
-
-33. Accept the confirmation dialog. The process disconnects any services
-    still connected to the policy.
-
-> ![](./media/image40.png)
+    ![](./media/b24.png)
 
 ## Lab validation checklist
 
