@@ -1,6 +1,6 @@
 # Agent Cost Management in Microsoft 365 Copilot
 
-### Overall Estimated Duration: 1 Hour 40 Minutes
+### Overall Estimated Duration: 4 Hours
 
 ## Overview
 

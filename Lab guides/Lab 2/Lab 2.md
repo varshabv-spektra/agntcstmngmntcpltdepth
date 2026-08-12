@@ -5,7 +5,7 @@
 | Field | Detail |
 |---|---|
 | Course | Microsoft 365 Copilot administration |
-| Estimated time | 40 minutes |
+| Estimated time | 2 hours |
 | Environment | Microsoft 365 admin center (test tenant) |
 
 # Lab objectives

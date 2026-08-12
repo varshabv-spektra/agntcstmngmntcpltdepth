@@ -6,7 +6,7 @@ admin center.
 
 |  |  |
 |---|---|
-| **Estimated duration** | 30 minutes |
+| **Estimated duration** | 1 hour 30 minutes |
 | **Level** | Intermediate |
 | **Required role** | Global administrator or Billing administrator |
 | **Environment** | Microsoft 365 test/lab tenant with an Azure subscription |
