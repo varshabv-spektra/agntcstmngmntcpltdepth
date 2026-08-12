@@ -73,12 +73,11 @@ over-estimating.
 
 - The tool loads instantly — no sign-in required.
 
-> ![](./media/image1.png)
->
-> Step 2 Add your agent or agents is enabled or seen only after your
-> select the agent catagory
->
-> ![](./media/image2.png)
+    ![](./media/b48.png)
+
+ Step 2 Add your agent or agents is enabled or seen only after your
+ select the agent catagory
+  ![](./media/b49.png)
 
 ## Exercise 2 — Walk through the estimator window
 
@@ -96,37 +95,36 @@ Orient yourself to the main regions of the window:
     Credits, and Free Copilot Chat controls, plus the currency converter
     link.
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image3.png)
+    ![A screenshot of a computer AI-generated content may be
+ incorrect.](./media/b50.png)
 
 - **Rate reference.** Displayed near the top: 1 Copilot Credit = $0.01
   USD. Use the “Go here to convert to your currency” link for non-USD
   estimates.
 
-> ![A screenshot of a credit estimator AI-generated content may be
-> incorrect.](./media/image4.png)
+  ![A screenshot of a credit estimator AI-generated content may be
+ incorrect.](./media/image4.png)
 
 - **Left panel — configuration.** Where you select products, add agents,
   and enter traffic, knowledge, tools, and flow assumptions.
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image5.png)
+  ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image5.png)
 
 - **Right panel — results (read-only).** Shows the Total Estimated
   Copilot Credits and the per-bucket breakdown (knowledge, agent tools,
   agent flows). It recalculates automatically.
 
-> ![](./media/image6.png)
+  ![](./media/image6.png)
 
 - **Two-step flow.** Step 1: select your product(s). Step 2: add and
   configure your agent(s). The results panel stays visible throughout.
 
-> ![](./media/image7.png)
->
-> ![](./media/image8.png)
+  ![](./media/image7.png)
 
-> **Tip**
->
+  ![](./media/image8.png)
+
+> **Tip:**
 > Nothing you enter is saved to Microsoft or requires a sign-in. The estimator runs entirely in your browser, so you can experiment freely and reset at any time using the **Reset** control in the top toolbar.
 
 ## Exercise 3 — Select an agent category and type
@@ -142,23 +140,23 @@ Orient yourself to the main regions of the window:
 >
 > The workflow is expected to remain unchanged, with only new **Microsoft 365 Copilot agent types** becoming available for selection.
 
-![](./media/image9.png)
+![](./media/b51.png)
 
 1.  Choose one or more categories to filter the available agents:
     Copilot Studio Custom, Dynamics 365 Sales, Service, Finance, Supply
     Chain Management, or Microsoft 365.
 
-![](./media/image10.png)
+    ![](./media/image10.png)
 
-![](./media/image11.png)
+    ![](./media/b52.png)
 
 2.  Scroll down and select the **+** button on an agent card to add it.
     For this lab, add a **Copilot Studio Custom (B2E)** employee-facing
     agent.
 
-![](./media/image12.png)
+    ![](./media/b53.png)
 
-![](./media/image13.png)
+    ![](./media/b54.png)
 
 **Copilot Credit Estimator calculator window opens:** this is the
 calculator that estimates how many Copilot Credits your custom agent
@@ -197,18 +195,18 @@ stay as “-” until you complete the required (\*) fields.
 
 6.  Click **Save** (top left) to store the estimate.
 
-**Note:** the estimator's credit-to-cost conversion and the exact
+**Note:** The estimator's credit-to-cost conversion and the exact
 license allowances change over time, so treat the output as a planning
 estimate rather than a billing guarantee.
 
-![](./media/image14.png)
+![](./media/b55.png)
 
 ### Agent configuration
 
 1.  **Agent Name** — enter a descriptive name, for example **HR Helpdesk
     Agent**. This is just a label for the estimate.
 
-![](./media/image15.png)
+    ![](./media/b56.png)
 
 2.  **Do you have users with M365 Copilot licenses?** Select **Yes** or
     **No**. This matters for cost:
@@ -224,7 +222,7 @@ estimate rather than a billing guarantee.
 Pick the option that matches your actual user base. If it's mixed, the
 estimator generally asks whether the agent's audience holds licenses.
 
-![](./media/image16.png)
+![](./media/b57.png)
 
 ## Exercise 5 — Configure knowledge, orchestration, and tools
 
@@ -253,7 +251,7 @@ lower.
 
 - **Of those, percentage using tenant graph grounding:** 10
 
-![](./media/image18.png)
+  ![](./media/image18.png)
 
 ### Worked example — knowledge credit calculation
 
@@ -314,7 +312,7 @@ HR Helpdesk agent, that is **Model Context Protocol**.
 | **Model Context Protocol** | **1** | **0.01** |
 | REST API | *(leave blank)* | *(leave blank)* |
 
-![](./media/image19.png)
+![](./media/b58.png)
 
 **Note:** an invocation rate of 0.01 means the MCP connector fires on
 only 1 out of every 100 interactions.
@@ -351,7 +349,7 @@ No Power Automate-style flows are defined for this agent, so:
 
 - **Average actions per flow?** Leave blank.
 
-![](./media/image20.png)
+![](./media/b59.png)
 
 ### Agent optional modifiers (prompt model types)
 
@@ -368,21 +366,19 @@ no separate Basic, Standard, or Premium prompt actions, so:
 Leave all three empty unless you have explicitly built custom prompt
 tools into the agent.
 
-![](./media/image21.png)
+  ![](./media/b60.png)
 
 ## Exercise 6 — Review the results panel and save
 
 1.  Scroll up and click **Save** to store the HR Helpdesk agent
     configuration for future reference.
 
-![](./media/image22.png)
-
-![](./media/image23.png)
+    ![](./media/image23.png)
 
 The total credit estimate for the HR Helpdesk agent is stored in the
 right panel.
 
-![](./media/image24.png)
+  ![](./media/b61.png)
 
 You can edit, delete, or duplicate the saved agent configuration at any
 time.
@@ -403,23 +399,23 @@ produces a shareable output directly from the top toolbar.
     generates a PDF summarizing your selected products, configured
     agents, per-bucket credit breakdown, and the total estimate.
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image26.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/b62.png)
 
 3.  Save the file with a descriptive name, for example
     **Copilot-Credit-Estimate_HR-Helpdesk_YYYY-MM.pdf**, so future
     revisions are easy to track.
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image27.png)
->
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image28.png)
->
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image29.png)
->
-> ![](./media/image30.png)
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image27.png)
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image28.png)
+
+    ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/image29.png)
+
+    ![](./media/image30.png)
 
 4.  **Distribute for review.** Share the PDF with finance and
     procurement stakeholders as the supporting document for your credit
