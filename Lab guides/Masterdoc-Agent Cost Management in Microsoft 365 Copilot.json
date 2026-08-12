@@ -1,0 +1,28 @@
+[
+  {
+    "Name": "Agent Cost Management in Microsoft 365 Copilot",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabsAI-Azure/agntcstmngmntcpltdepth",
+    "Files": [
+       {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/agntcstmngmntcpltdepth/refs/heads/main/Lab%20guides/getting-started.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/agntcstmngmntcpltdepth/refs/heads/main/Lab%20guides/Lab1/Lab%201.md",
+        "Order": 2
+      },
+
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/agntcstmngmntcpltdepth/refs/heads/main/Lab%20guides/Lab%202/Lab%202.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/agntcstmngmntcpltdepth/refs/heads/main/Lab%20guides/Lab%203/Lab%203.md",
+        "Order": 4
+      },
+
+
+    ]
+  }
+]
